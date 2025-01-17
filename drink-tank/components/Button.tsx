@@ -1,4 +1,4 @@
-import { StyleSheet, TouchableOpacity, Text, ColorValue } from "react-native";
+import { StyleSheet, TouchableOpacity, Text } from "react-native";
 import { Link } from "expo-router";
 import { type Href } from "expo-router";
 

@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import { Button } from "@/components/Button";
-import { Link } from "expo-router";
+import Title from "../components/Title";
 
 export default function Index() {
   return (
@@ -11,6 +11,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
+      <Title title="Drink Tank" />
       <Button text="Quickplay" colour="#8F8CFF" href="/quickplay" />
       <Button text="Games" colour="#DA8CFF" href="/games" />
       <Button text="Settings" colour="#FF8C8C" href="/settings" />
