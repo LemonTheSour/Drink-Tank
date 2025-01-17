@@ -1,27 +1,36 @@
 import { StyleSheet, TouchableOpacity, Text, ColorValue } from "react-native";
-import { Colours } from "../constants/Colours";
+import { Link } from "expo-router";
+import { type Href } from "expo-router";
 
 type ButtonProps = {
   text: string;
   colour: string;
+  href: Href;
 };
 
-export function Button({ text, colour }: ButtonProps) {
+export function Button({ text, colour, href }: ButtonProps) {
   return (
-    <TouchableOpacity style={[styles.button, { backgroundColor: colour }]}>
-      <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
+    <Link href={href} style={[styles.button, { backgroundColor: colour }]}>
+      <TouchableOpacity style={styles.touchable}>
+        <Text style={styles.text}>{text}</Text>
+      </TouchableOpacity>
+    </Link>
   );
 }
 
 const styles = StyleSheet.create({
   button: {
-    height: 48,
+    height: 64,
     width: "80%",
     borderRadius: 8,
+    marginBottom: 20,
+  },
+  touchable: {
+    height: "100%",
+    width: "100%",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 20,
+    textAlign: "center",
   },
   text: {},
 });

@@ -11,10 +11,10 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Button text="Quickplay" colour="#8F8CFF" />
-      <Button text="Games" colour="#DA8CFF" />
-      <Button text="Settings" colour="#FF8C8C" />
-      <Button text="Customise" colour="#BABABA" />
+      <Button text="Quickplay" colour="#8F8CFF" href="/quickplay" />
+      <Button text="Games" colour="#DA8CFF" href="/games" />
+      <Button text="Settings" colour="#FF8C8C" href="/settings" />
+      <Button text="Customise" colour="#BABABA" href="/customise" />
     </View>
   );
 }
