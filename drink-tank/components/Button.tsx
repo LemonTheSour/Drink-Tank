@@ -11,9 +11,7 @@ type ButtonProps = {
 export function Button({ text, colour, href }: ButtonProps) {
   return (
     <Link href={href} style={[styles.button, { backgroundColor: colour }]}>
-      <TouchableOpacity style={styles.touchable}>
-        <Text style={styles.text}>{text}</Text>
-      </TouchableOpacity>
+      <Text style={styles.text}>{text}</Text>
     </Link>
   );
 }
@@ -32,5 +30,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
     textAlign: "center",
   },
-  text: {},
+  text: { fontSize: 20 },
 });

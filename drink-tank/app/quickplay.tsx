@@ -1,4 +1,6 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import Title from "@/components/Title";
+import PlayerForm from "@/components/PlayerInput/PlayerForm";
 
 export default function Quickplay() {
   return (
@@ -9,7 +11,8 @@ export default function Quickplay() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/quickplay.tsx to edit this screen.</Text>
+      <Title title="Add Players" />
+      <PlayerForm />
     </View>
   );
 }
