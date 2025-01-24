@@ -18,6 +18,9 @@ export function Button({ text, colour, href }: ButtonProps) {
 
 const styles = StyleSheet.create({
   button: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
     height: 64,
     width: "80%",
     borderRadius: 8,
@@ -26,9 +29,10 @@ const styles = StyleSheet.create({
   touchable: {
     height: "100%",
     width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-    textAlign: "center",
   },
-  text: { fontSize: 20 },
+  text: {
+    fontSize: 20,
+    width: "100%",
+    height: "100%",
+  },
 });
